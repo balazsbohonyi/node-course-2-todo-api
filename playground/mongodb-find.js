@@ -1,11 +1,5 @@
 const {MongoClient, ObjectID} = require('mongodb');
 
-// // ES6 destructuring
-// // - it's a fantastic way to make new variables from an object's properties
-// var user = { name: 'Andrew', age: 25 };
-// var {name} = user;
-// console.log(name);
-
 // TodoApp in the URL below it's the DB name
 MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, client) => {
   if (err) {
