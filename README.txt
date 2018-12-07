@@ -55,3 +55,33 @@ ES6 destructuring
 var user = { name: 'Andrew', age: 25 };
 var {name} = user;
 console.log(name);
+
+
+--------------------------------
+Mongoose ORM
+--------------------------------
+https://mongoosejs.com/
+
+
+--------------------------------
+Postman
+--------------------------------
+https://www.getpostman.com/
+It's an essential tool if you're building an API.
+Postman lets you create HTTP requests and fire them off - makes it easy to test that everything you're writing it's working as expected.
+
+Download the Postman app and install it to use Postman.
+
+--------------------------------
+Body Parser Package
+--------------------------------
+https://www.npmjs.com/package/body-parser
+
+Node.js body parsing middleware
+Parse incoming request bodies in a middleware before your handlers, available under the req.body property.
+
+--------------------------------
+HTTP status codes
+--------------------------------
+https://httpstatuses.com/
+Get a list of all available HTTP status codes
