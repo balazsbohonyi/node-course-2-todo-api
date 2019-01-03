@@ -63,7 +63,7 @@ describe('POST /todos', () => {
   });
 });
 
-// ------------ GET /todos test cases ------------ 
+// ------------ GET /todos test cases ------------
 describe('GET /todos', () => {
   it('should get all todos', (done) => {
     request(app)
