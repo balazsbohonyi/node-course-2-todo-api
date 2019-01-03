@@ -11,7 +11,7 @@ var app = express();
 // configure the middleware
 app.use(bodyParser.json());
 
-// route for inserting a new Todo
+// ------------ POST /todos route - inserting a new Todo ------------
 app.post('/todos', (req, res) => {
   // console.log(req.body);
 
@@ -26,7 +26,7 @@ app.post('/todos', (req, res) => {
   });
 });
 
-// route to get all the Todos
+// ------------ GET /todos route - get all the Todos ------------
 app.get('/todos', (req, res) => {
   Todo.find().then((todos) => {
     res.send({todos})

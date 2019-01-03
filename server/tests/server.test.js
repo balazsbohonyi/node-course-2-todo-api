@@ -18,7 +18,7 @@ beforeEach((done) => {
 });
 
 
-// POST /todos test cases
+// ------------ POST /todos test cases ------------
 describe('POST /todos', () => {
   // Test Case 1: adding a todo
   it('should create a new todo', (done) => {
@@ -63,7 +63,7 @@ describe('POST /todos', () => {
   });
 });
 
-// GET /todos test cases
+// ------------ GET /todos test cases ------------ 
 describe('GET /todos', () => {
   it('should get all todos', (done) => {
     request(app)
