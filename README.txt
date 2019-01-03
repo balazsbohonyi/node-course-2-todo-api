@@ -58,6 +58,13 @@ console.log(name);
 
 
 --------------------------------
+Running tests
+--------------------------------
+
+npm run test - this one is running via nodemon
+npm run test-watch - this one is running via nodemon
+
+--------------------------------
 Mongoose ORM
 --------------------------------
 https://mongoosejs.com/
