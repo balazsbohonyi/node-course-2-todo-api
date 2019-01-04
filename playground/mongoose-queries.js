@@ -1,4 +1,4 @@
-var ObjectID = require('mongodb').ObjectID;
+var {ObjectID} = require('mongodb');
 
 const {mongoose} = require('./../server/db/mongoose');
 const {Todo} = require('./../server/models/todo');
@@ -6,10 +6,9 @@ const {Todo} = require('./../server/models/todo');
 // got this ID from the Mongo database (using Robo 3T)
 var id ="5c2e0556b55a4833ccf6c5f5";
 
-// TODO: for some reason this is not working as expected
-// if(!ObjectID.isValid(id)) {
-//   console.log('Todo ID not valid!');
-// }
+if(!ObjectID.isValid(id)) {
+  console.log('Todo ID not valid!');
+}
 
 // // find
 // Todo.find({
@@ -32,4 +31,6 @@ Todo.findById(id).then((todo) => {
   }
 
   console.log('Todo By Id', todo);
+}, (e) => {
+  console.log(e.message);
 });
