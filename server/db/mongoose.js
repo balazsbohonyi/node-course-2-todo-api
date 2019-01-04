@@ -4,7 +4,8 @@ var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 // connecting to MongoDB
-mongoose.connect('mongodb://localhost:27017/TodoApp');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/TodoApp');
+// process.env.MONGODB_URI it's the MongoDB url on Heroku
 
 module.exports = {
   mongoose: mongoose
