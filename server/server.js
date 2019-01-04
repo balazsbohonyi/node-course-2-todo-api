@@ -8,7 +8,8 @@ var {User} = require('./models/user');
 
 // setting up Express and API routes
 var app = express();
-const port = process.env.PORT || 3000;  // needed for Heroku
+const port = process.env.PORT || 3000;
+// process.env.PORT needed for Heroku
 
 // configure the middleware
 app.use(bodyParser.json());
