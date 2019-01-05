@@ -62,6 +62,30 @@ app.get('/todos/:id', (req, res) => {
   });
 });
 
+// ------------ DELETE /todos/:ID route - delete an individual Todo ------------
+app.delete('/todos/:id', (req, res) => {
+  // get the id of the todo
+  var id = req.params.id;
+
+  // send a 404 status if object id is not valid
+  if (!ObjectID.isValid(id)) {
+    return res.status(404).send();
+  }
+
+  // remove the todo
+  Todo.findByIdAndRemove(id).then((todo) => {
+      // todo not found - send back a 404
+      if (!todo) {
+        return res.status(404).send();
+      }
+
+      // todo found, send back the removed todo object
+      res.send({todo});
+  }).catch((e) => {
+    // error - something went wrong
+    res.status(400).send();
+  });
+});
 
 
 // starting the server
