@@ -11,7 +11,7 @@ mongo
 > db.Todos.insert({text: 'Create new Node course'})
 > db.Todos.find()
 
-Donwload and install https://robomongo.org/ (like PHPMyAdmin / MySQL Workbench)
+Download and install https://robomongo.org/ (like PHPMyAdmin / MySQL Workbench)
 
 ----------------------------------------
 MongoDB Vocabulary
